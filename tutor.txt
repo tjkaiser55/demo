@@ -1,0 +1,9 @@
+Grep is a small Unix program for finding matching patterns. Begun as a Unix program, it can be found on Linux as well as Mac and BSD. It can read just about any text, meaning it can read input from another commands, or it can open and look through files directly. Grep is insanely useful, especially for looking through directories from the command line.
+
+Grep can search through more than one file or directory at the same time. Be warned, if you’re looking for file names, Grep will search through files by default, too. The -r flag tells Grep to search recursively.
+
+ls ~/Downloads | grep -r .deb
+
+You can pair this with other flags, too. You may want to include the -I flag when doing recursive searches to keep Grep from looking through binary files.
+
+ls ~/Downloads | grep -iIr .deb
